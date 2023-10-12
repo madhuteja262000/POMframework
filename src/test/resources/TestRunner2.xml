@@ -1,0 +1,26 @@
+<suite name="testsuite2" verbose="1">
+
+<test name="TestCycle1">
+<classes>
+<class name="com.app.TestNgScripts.TestAnnotation">
+  <methods>
+    <include name="login"></include> 
+  </methods>
+</class>
+
+<class name="com.app.TestNgScripts.BeforeAfterMethod">
+<methods>
+  <include name="logout"></include>
+</methods>
+</class>
+
+<class name="com.app.TestNgScripts.BeforeAfterClassAnnotation">
+ <methods>
+  <exclude name="login"></exclude>
+  <exclude name="logout"></exclude>
+</methods>
+</class>
+</classes>
+</test>
+
+</suite>
